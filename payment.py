@@ -14,7 +14,7 @@ from googleapiclient.discovery import build
 from pathlib import Path
 
 # ---------- CONFIG ----------
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+SCOPES = ['https://www.googleapis.com/auth/XXXXXXXXXXXXXX']
 DOWNLOAD_FOLDER = str(Path.home() / "Downloads" / "Download Payment Adv")
 SUBJECT_KEYWORD = "[Group Account] SCB Business Anywhere: New Transfer Received (ได้รับเงินโอนเข้าบัญชี)"
 
@@ -55,10 +55,9 @@ def extract_info_from_pdf(filepath):
 # ---------- GMAIL AUTH ----------
 global_creds = None
 def get_gmail_service():
-    creden_dict = {"installed":{"client_id":"643248617111-oa9ulfu99mhugui3cea39gp94cklghh4.apps.googleusercontent.com",
-                    "project_id":"haupcar-staging","auth_uri":"https://accounts.google.com/o/oauth2/auth",
-                    "token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
-                    "client_secret":"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","redirect_uris":["http://localhost"]}}
+    creden_dict = {" 
+    
+                   "]}}
     global global_creds
     if global_creds:
         return build('gmail', 'v1', credentials=global_creds)
